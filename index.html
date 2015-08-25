@@ -1,0 +1,61 @@
+
+<html>
+<head>
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <script type="text/jsx" src="./googleMap.js"></script>
+  <script type="text/jsx" src="./Table.js"></script>
+  <script type="text/jsx" src="./Label.js"></script>
+  <script type="text/jsx" src="./App.js"></script>
+
+
+</head>
+<body>
+
+</body>
+<script type='text/jsx'>
+  var data = [
+    {
+      'title' : "marker1",
+      'size':"9" ,
+      'type':"BMW" ,
+      'latitude' : "39.903490",
+      'longitude' : "116.238073"
+    },
+    {
+      'title' : "marker2",
+      'size':"10",
+      'type':"Audi",
+      'latitude' : "39.8",
+      'longitude' : "116.4"
+    },
+    {
+      'title' : "marker3",
+      'size': "11",
+      'type': "Mercedes",
+      'latitude' : "39.7",
+      'longitude' : "116.2"
+    },
+    {
+      'title' : "marker1",
+      'size': "9",
+      'type': "Mercedes",
+      'latitude' : "39.3",
+      'longitude' : "116.7"
+    },
+    {
+      'title' : "marker1",
+      'size': "9",
+      'type': "Mercedes",
+      'latitude' : "39.32",
+      'longitude' : "116.71"
+    }
+  ];
+
+  React.render(<App />, document.body);
+  </script>
+</html>
