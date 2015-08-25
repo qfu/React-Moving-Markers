@@ -66,7 +66,6 @@ var ExampleGoogleMap = React.createClass({
   componentDidUpdate: function () {
     console.log("componentDidUpdate");
     console.log(this.state.map);
-
   },
   setMarkers: function(map){
     var markers =[];
@@ -80,17 +79,6 @@ var ExampleGoogleMap = React.createClass({
     });
     console.log("setMarkers");
     this.setState({markers: markers});
-  },
-  moveMarkers: function(){
-    var markers = this.state.markers;
-    setInterval(function(){
-      for(var i = 0; i < markers.length; i++){
-        var l = markers[i].getPosition().lat() + (Math.random() * (0.002 - 0.0001) + 0.0001) - 0.001;
-        var lo = markers[i].getPosition().lng()+ (Math.random() * (0.002 - 0.0001) + 0.0001) - 0.001;
-        markers[i].setPosition(new google.maps.LatLng(l, lo));
-      }
-    }, 100);
-
   },
   render: function () {
     console.log("MapComponentRendering");
