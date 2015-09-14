@@ -72,12 +72,11 @@ var App = React.createClass({
     var data = this.state.data;
     return (
       <div>
-        <ExampleGoogleMap ref="Beijing" mapCenterLat={39.9167} mapCenterLng={116.3833} initialZoom={4} markers={data}>
+        <ExampleGoogleMap mapCenterLat={39.9167} mapCenterLng={116.3833} initialZoom={4} markers={data}>
         </ExampleGoogleMap>
         <Dropdown ref="type" filter="type" update={this.update} item={filter.type}/>
         <Dropdown ref="size" filter="size" update={this.update} item={filter.size}/>
         <Dropdown ref="title" filter="title" update={this.update} item={filter.title}/>
-
         <Table markers={data}/>
 
 
